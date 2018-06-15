@@ -165,3 +165,19 @@ footer {
         font-size: 3.5vw;
     }
 }
+
+@media only screen and (max-width: 645px) {
+    
+    #header {
+        text-align: center;
+    }
+
+    #headline {
+        text-align: left;
+    }
+
+    button#unsave-article, button#notes {
+        float: none;
+        margin: 10px auto;
+    }
+}
