@@ -1,0 +1,166 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Navbar Styles */
+
+a.navbar-brand {
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+}
+
+a.nav-link {
+    font-size: 1.1rem;
+    margin: .3125rem;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    background-color: rgba(255,255,255, .75);
+    color: #272727;
+}
+
+button#scraper {
+    margin-left: 30px;
+}
+
+/* Background Image Area Styles */
+
+.news-image {
+    background-image: url("../images/newspaper.jpg");
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.news-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.news-text>h1 {
+    font-size: 5.0vw;
+}
+
+.news-text>p {
+    font-size: 2.5vw;
+    font-style: italic;
+}
+
+/* News Listing Styles */
+
+.jumbotron-fluid#header{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #7F9AB7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.jumbotron-fluid#footer{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #c7c7c7;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+button#save-article, button#unsave-article, button#notes {
+    float: right;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.display-4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* No listings */
+
+#no-articles {
+    text-align: center;
+}
+
+.no-listings {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Saved Articles Styles */
+
+textarea {
+    resize: none;
+}
+
+/* Note Display Styles */
+.note-delete {
+    float: right;
+    padding: 1px 6px;
+}
+
+ul.current-notes {
+    padding-left: 0px;
+}
+
+/* Footer Styles */
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #b46c54;
+    padding-top: 25px;
+    height: 70px;
+    margin-top: 100px;
+}
+
+
+
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 992px) {
+
+    /* Navbar adjust left margin for button on hamburger menu */
+    button#scraper {
+        margin-left: 0px;
+    }
+    /* Shorten background img */
+    .news-image {
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+
+    /* Shorten background image (IPhone) */
+    .news-image {
+        height: 30%;
+    }
+    /* Adjust main text */
+    .news-text>h1 {
+        font-size: 5.7vw;
+    }
+    /* Adjust sub text on main */
+    .news-text>p {
+        font-size: 3.5vw;
+    }
+}
