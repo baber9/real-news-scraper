@@ -10,9 +10,10 @@ a.navbar-brand {
     margin-right: 1.25rem;
 }
 
-a.nav-link {
+.navbar-nav a.nav-link {
     font-size: 1.1rem;
     margin: .3125rem;
+    padding-left: 15px;
 }
 
 .navbar-dark .navbar-nav .active>.nav-link {
