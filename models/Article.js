@@ -17,6 +17,12 @@ const ArticleSchema = new Schema({
         type: String,
         required: true
     },
+    date: String,
+    saved: {
+        type: Boolean,
+        default: false
+    },
+
     // Object to store note
     // link to Note model which allows us to populate Article with associatied note
     note: {

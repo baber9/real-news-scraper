@@ -5,8 +5,8 @@ const Schema = mongoose.Schema;
 
 // create new NoteSchema using contructor
 const NoteSchema = new Schema({
-    title: String,
-    body: String
+    note: String,
+    articleId: String
 });
 
 // use mongoose model method to create model (using schema above)
